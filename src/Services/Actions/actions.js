@@ -1,7 +1,14 @@
-import { Add_To_Cart } from "../constants"
+import { ADD_TO_CART , REMOVE_TO_CART} from "../constants"
 export const addToCart = (data)=>{
     return{
-        type:Add_To_Cart,
+        type:ADD_TO_CART,
+        data:data
+    }
+}
+
+export const RemoveToCart = (data)=>{
+    return{
+        type:REMOVE_TO_CART,
         data:data
     }
 }
